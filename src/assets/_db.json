@@ -1,0 +1,28 @@
+{
+    "members": [
+        {
+            "id": "1245",
+            "cin": "123456789",
+            "name": "imene lahyeni",
+            "createdDate": "2020-10",
+            "cv": "lien",
+            "type": "TEACHER"
+        },
+        {
+            "id": "1234",
+            "cin": "12234578933",
+            "name": "meriam  hamdani",
+            "createdDate": "2020-9",
+            "cv": "lien",
+            "type": "STUDENT"
+        },
+        {
+            "id": "1456",
+            "cin": "7885222",
+            "name": "farah  hamdani",
+            "createdDate": "2020-8",
+            "cv": "lien",
+            "type": "TEACHER"
+        }
+    ]
+}

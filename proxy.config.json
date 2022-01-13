@@ -1,0 +1,10 @@
+{
+    "/api":{
+        "taget":"http://localhost:9000",
+        "secure":true,
+        "changeOrigin":true,
+        "pathRewrite":{
+            "^/api":""
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<div >
+<form [formGroup]="form" (ngSubmit)="onSubmit()"> 
+        <mat-form-field class="inp"><input matInput placeholder="cin" formControlName="cin"></mat-form-field><br>
+        <mat-form-field class="inp"><input matInput placeholder="name" formControlName="name"></mat-form-field><br>
+        <mat-form-field class="inp"> <input matInput placeholder="cv" formControlName="cv" ></mat-form-field><br>
+        <mat-form-field class="inp"> <input matInput placeholder="type" formControlName="type"></mat-form-field><br>
+        <button mat-button type="submit">Submit</button>
+    </form>
+</div>
