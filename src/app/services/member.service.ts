@@ -27,7 +27,7 @@ export class MemberService {
   }
   getMemeberById(id: string): Promise<Member> {
     return this.httpClient
-      .get<Member>('http://localhost:4200/api/MEMBRE-SERVICE/membre/' + id)
+      .get<Member>('http://localhost:4200/api/MEMBRE-SERVICE/membres/' + id)
       .toPromise();
     /*   return new Promise((resolve) =>
       resolve(this.tab.filter((element) => element.id === id)[0] ?? null)
