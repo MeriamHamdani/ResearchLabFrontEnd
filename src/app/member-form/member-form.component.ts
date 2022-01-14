@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Member } from '../models/member';
+import { Member } from '../models/member.model';
 import { MemberService } from '../services/member.service';
 
 @Component({
@@ -26,9 +26,12 @@ onSubmit():void {
 InitForm(item : any):void {
   this.form = new FormGroup({
     cin: new FormControl(item?.cin,[Validators.required]),
-    name: new FormControl(item?.name,[Validators.required]),
+    nom: new FormControl(item?.nom,[Validators.required]),
+    date : new FormControl(item?.date,[Validators.required]),
     cv: new FormControl(item?.cv,[]),
     type: new FormControl(item?.type,[Validators.required]),
+    email: new FormControl(item?.email,[Validators.required]),
+    photoURL: new FormControl(item?.photoURL,[Validators.required]),
   })
 }
   ngOnInit(): void {
@@ -37,7 +40,7 @@ InitForm(item : any):void {
     console.log(this.currentId);
     if (!!this.currentId) 
     {
-      this.memberService.getMemberById(this.currentId).then
+      this.memberService.getMemeberById(this.currentId).then
        ((item) => {this.item1 =item; this.InitForm(this.item1);})
     }
     else 
