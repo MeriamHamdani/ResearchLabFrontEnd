@@ -36,6 +36,7 @@ export class MemberListComponent implements OnInit {
     dialogRef.afterClosed().pipe().subscribe (
       isDeletedConfirmed => {
       if (isDeletedConfirmed) 
+      
       {this.memberservice.deleteMemberById(id);}
       }
     )
@@ -43,6 +44,7 @@ export class MemberListComponent implements OnInit {
   // applyFilter(event: Event) {
   //   const filterValue = (event.target as HTMLInputElement).value;
   //   this.dataSource.filter = filterValue.trim().toLowerCase();
+ 
   //   if (this.dataSource.paginator) {
   //     this.dataSource.paginator.firstPage();
   //   }
